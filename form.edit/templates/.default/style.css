@@ -1,0 +1,100 @@
+.form-required:after {
+    content: '*';
+    padding: 0px 3px;
+    color: red;
+}
+.list-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 10px;
+}
+.list-items .list-header,
+.list-items .list-body .list-body-row
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+}
+.list-items .list-header .list-header-th,
+.list-items .list-body .list-body-row .list-row-td
+{
+    text-align: center;
+    width: 300px;
+}
+.list-items .list-body .list-body-row:hover .list-row-td input,
+.list-items .list-body .list-body-row:hover .list-row-td select
+{
+    border-color: #86b7fe;
+}
+.list-items .list-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    gap: 10px;
+}
+.list-items .list-body .list-body-row {
+    position: relative;
+}
+.list-items .list-body .list-body-row .list-row-td .item-label {
+    display: none;
+}
+.list-row-action {
+    width: 30px!important;
+    height: 20px!important;
+}
+.list-footer .action-block {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    padding-right: 30px;
+}
+.form-action {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+@media (max-width: 540px) {
+    .btn-sm-block {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-md-block {
+        display: block;
+        width: 100%;
+    }
+    .list-items .list-header {
+        display: none;
+    }
+    .list-items .list-body .list-body-row {
+        flex-direction: column;
+        align-items: stretch;
+        background: #ebebeb;
+        padding: 15px 20px 20px;
+        border-radius: 8px;
+    }
+    .list-items .list-body .list-body-row .list-row-td {
+        text-align: left;
+        width: auto;
+    }
+    .list-items .list-body .list-body-row .list-row-td .item-label {
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+    .list-items .list-body .list-body-row .list-row-td.list-row-action {
+        position: absolute;
+        right: 0px;
+        top: 10px;
+    }
+    .list-footer .action-block {
+        padding-right: 0;
+    }
+}

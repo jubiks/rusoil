@@ -1,0 +1,19 @@
+<?php
+$MESS['ALERT_SUCCESS'] = 'Заявка успешно отправлена';
+$MESS['TITLE_FORM'] = 'Новая заявка';
+$MESS['INPUT_TITLE'] = 'Заголовок заявки';
+$MESS['INPUT_CATEGORY'] = 'Категория';
+$MESS['INPUT_TYPE'] = 'Вид заявки';
+$MESS['INPUT_STORE'] = 'Склад поставки';
+$MESS['INPUT_STORE_DEFAULT_SELECT'] = '(выберите склад поставки)';
+$MESS['TABLE_ITEMS'] = 'Состав заявки';
+$MESS['TABLE_ITEMS_HEADER_BRAND'] = 'Бренд';
+$MESS['TABLE_ITEMS_HEADER_BRAND_DEFAULT_SELECT'] = 'Выберите бренд';
+$MESS['TABLE_ITEMS_HEADER_NAME'] = 'Наименование';
+$MESS['TABLE_ITEMS_HEADER_QUANTITY'] = 'Количество';
+$MESS['TABLE_ITEMS_HEADER_PACKING'] = 'Фасовка';
+$MESS['TABLE_ITEMS_HEADER_CLIENT'] = 'Клиент';
+$MESS['TABLE_ITEMS_ROW_DELETE_TITLE'] = 'Удалить';
+$MESS['TABLE_ITEMS_ROW_ADD_TEXT'] = 'Добавить';
+$MESS['INPUT_COMMENT'] = 'Комментарий';
+$MESS['SUBMIT_BUTTON_TEXT'] = 'Отправить';
