@@ -2,6 +2,7 @@
 
 Тестовое задание
 Вызов компонента:
+
 `<?$APPLICATION->IncludeComponent('rusoil:form.edit','',['EMAIL_TO' => '']);?>`
 
 Тестирование:
