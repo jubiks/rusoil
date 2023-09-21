@@ -62,12 +62,6 @@ class RusoilFormEdit extends CBitrixComponent
         $title = trim(\htmlspecialcharsbx($this->request->get("title")));
         $category = intval($this->request->get("category"));
         $type = intval($this->request->get("type"));
-
-        if(empty($title) || !$category || !$type){
-            $this->addError(Loc::getMessage('ERROR_EMPTY_REQUIRED_FIELDS'));
-            return false;
-        }
-
         $store = intval($this->request->get("store"));
         $items = $this->request->get("list");
         $comment = trim(\htmlspecialcharsbx($this->request->get("comment")));
@@ -98,6 +92,11 @@ class RusoilFormEdit extends CBitrixComponent
             ];
         }
         $this->arResult['VALUES']['list'] = $arItems;
+
+        if(empty($title) || !$category || !$type){
+            $this->addError(Loc::getMessage('ERROR_EMPTY_REQUIRED_FIELDS'));
+            return false;
+        }
 
         if(is_array($attachment)){
             \CFile::SaveForDB($this->arResult['VALUES'], "attachment", "main");
